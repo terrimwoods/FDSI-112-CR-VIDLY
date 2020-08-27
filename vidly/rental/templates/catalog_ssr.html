@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+
+{% block styles %}
+<link rel="stylesheet" href="/static/css/catalog_ssr.css">
+{% endblock %}
+
+ {% block content %}
+
+<div class= "container-fluid">
+    <h1>Our Amazing Catalog:</h1>
+    <h3>With a total of {{movies.count}} movies</h3>
+
+{% for movie in movies%}
+
+    <div class="card" style="width: 18rem;">
+    <img src="{{movie.image_url}}" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h5 class="card-title">{{movie.title}}</h5>
+        <p class="card-text">{{movie.release_year}}/{{movie.genre}}</p>
+        <p class="card-text">${{movie.price}}</p>
+        <a href="/details/{{movie.id}}" class="btn btn-info">See Details</a>
+    </div>
+    </div>
+{% endfor %}
+
+</div>
+
+{% endblock  %}

@@ -1,0 +1,17 @@
+
+img{
+    width: 80%;
+    
+    
+}
+ul{
+    
+    border-radius: 5px;
+    color: yellow;
+    width: 80%;
+}
+.list-group-item{
+    background-color: gold;
+    color:rgb(58, 5, 145);
+    font-weight: 500;
+}

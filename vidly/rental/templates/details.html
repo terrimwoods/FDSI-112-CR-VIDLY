@@ -1,0 +1,52 @@
+
+{% extends 'layout.html' %}
+
+{% block styles %}
+<link rel="stylesheet" href="/static/css/details.css">
+{% endblock %}
+
+ {% block content %}
+ <h1>Overview:</h1>
+<!--
+<div class="card" style="width: 18rem;">
+  <img src="{{movie.image_url}}" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{movie.title}}/{{movie.release_year}}</h5>
+    <p class="card-text">{{movie.description}}</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">Director: {{movie.director}}</li>
+    <li class="list-group-item">Genre: {{movie.genre}}</li>
+    <li class="list-group-item">${{movie.price}}</li>
+  </ul>
+  <div class="card-body">
+        
+    <a href="/catalog" class="btn btn-outline-warning" style="color:gold;">Catalog</a>
+    
+  </div>
+</div>
+   -->
+   <div>
+    <img src="{{movie.image_url}}" class="img-fluid" alt="Responsive image">
+    
+  </div>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">{{movie.title}}</li>
+    <li class="list-group-item">{{movie.description}}</li>
+    <li class="list-group-item">Director: {{movie.director}}</li>
+    <li class="list-group-item">Genre: {{movie.genre}}</li>
+    <li class="list-group-item">${{movie.price}}</li>
+    
+  </ul>
+  <div class="card-body">
+        
+    <a href="/catalog" class="btn btn-outline-warning" style="color:gold;">Catalog</a>
+    
+  </div>
+{% endblock  %}
+
+
+
+
+

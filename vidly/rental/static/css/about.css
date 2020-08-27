@@ -1,0 +1,22 @@
+
+nav{
+    border-radius: 5px;
+    
+}
+h1{
+    font-weight: bolder;
+}
+.p1{
+    text-decoration-line: underline;
+    font-weight: bold;
+}
+.p2{
+    font-weight: bold;
+}
+
+.movie-screen{
+    background-image:url("https://i.ytimg.com/vi/5znji1uGNIs/maxresdefault.jpg");
+    border-radius: 5px;
+    height: 800vw;
+    
+}
